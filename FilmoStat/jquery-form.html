@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Forms with jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+	<section data-role="page" id="first">
+		<header data-role="header">
+			<h1>Form Demo</h1>
+		</header>
+		<article data-role="content">
+            <form name="form1" method="post" action="http://www.openloop.com/education/classes/adult_edu/website/backendfile.php">
+              <label>
+              <input type="checkbox" name="agree" id="agree" required>
+                I agree</label> 
+              Prof Sinn is the coolest professor that I have ever met. 
+              
+              <label><br>
+              <br>
+              First Name
+              <input type="text" name="firstname" id="firstname">
+              </label>
+              <p>
+                <label>Middle Name
+                <input type="text" name="middlename" id="middlename">
+                </label>
+              </p>
+              <p>
+                <label>Last Name
+                <input type="text" name="lastname" id="lastname">
+                </label>
+              </p>
+              <p>
+                <label>Home Number
+                <input type="text" name="homenumber" id="homenumber" pattern="/^(((\d{3}\s\d{3}[ ])|(\(\d{3}\)\s\d{3}[- ]))\d{4})$/" title="Please match the pattern -\n1. ### ### #### \n2. (###) ### #### \n3. (###) ###-####">
+                </label>
+
+                <label>Cell Phone Number
+                <input type="text" name="cellnumber" id="cellnumber" pattern="/^(((\d{3}\s\d{3}[ ])|(\(\d{3}\)\s\d{3}[- ]))\d{4})$/" title="Please match the pattern -\n1. ### ### #### \n2. (###) ### #### \n3. (###) ###-####">
+                </label>
+              </p>
+              <p>
+                <label>Address
+                <textarea name="address" id="address" rows="3" required></textarea>
+                </label>
+              </p>
+
+              <p>
+                <label for="select-choice-a" class="select">Your Gender</label>
+                    <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+                        <option>Custom menu example</option>
+                        <option id="male" value="male">male</option>
+                        <option id="female" value="female">female</option>
+                        <option id="neither" value="neither">neither</option>
+                    </select>
+                
+              </p>
+              <p>
+                <label>Suggestion
+                <textarea name="suggestion" id="suggestion" cols="45" rows="5" required></textarea>
+                </label>
+              </p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <input type="submit" value="Submit">  
+            </form>
+		</article>
+	<footer data-role="footer"><h1>Form Demo Footer</h1></footer>
+	</section>
+</body>
+</html>

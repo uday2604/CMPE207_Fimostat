@@ -1,0 +1,21 @@
+body { padding-top:50px; }
+ 
+#content-views 
+{ position:relative; }
+
+.ng-enter, .ng-leave 
+{width:100%; position:absolute;}
+
+.ng-enter 
+{
+-webkit-animation:zoomOutUpzoomOutUpzoomOutUp 1.5s both ease-in;
+-moz-animation:zoomOutUpzoomOutUp 1.5s both ease-in;
+animation:zoomOutUp 1.5s both ease-in;
+}
+
+.ng-leave 
+{
+-webkit-animation:zoomOutUp 1.5s both ease-in;
+-moz-animation:zoomOutUp 1.5s both ease-in;
+animation:zoomOutUp 1.5s both ease-in;
+}

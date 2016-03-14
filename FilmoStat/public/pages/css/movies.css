@@ -1,0 +1,174 @@
+    body{
+
+        background-color: transparent;
+        /*background-image: url('img/moviesbg.jpg');*/
+    }
+    .container{
+        position: relative;
+        height: 100%;
+
+
+
+    }
+
+    .panel{
+        background-color: rgba(255,255,255,0.1);
+
+    }
+
+    .panel-title{
+       color: gray;
+   }
+
+
+   .alfa-left,.alfa-right{
+
+    display:inline-block;
+    overflow: hidden;
+    margin-left: 15%; 
+    height: 250px;
+    width: 250px;
+    margin-top: 10px; 
+    box-shadow: 0px 0px 100px 0px black;
+    background-color: black;
+
+}
+
+.alfa-right{
+    padding: 0px 0px 0px 10px;
+    
+}
+th{
+    text-align: center;
+}
+table{
+
+    margin-left:2%;
+    height: inherit; 
+    position: inline; 
+    opacity: 0.1; 
+    z-index: -1;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    /*border-radius: 10px;*/
+    background-color: rgba(34,34,34,0.9);
+    border: 2px groove black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: rgba(255,255,255,0.5);
+    border:1px solid white;
+
+
+}
+
+.panel-heading{
+    background-color: rgba(34,34,34,0.9) !important;
+}
+
+.panel{
+    border: 1px ridge rgba(34,34,34,0.9) ;
+}
+
+
+#betacomp1,#betacomp2,#betacomp3,#betacomp4,#betacomp5,#betacomp6,
+#betacomp7,#betacomp8,#betacomp9 {
+
+   border: 2px solid white;
+
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   -ms-transition: all 2s ease;
+   transition: all 2s ease;
+}
+
+#betacomp1:hover,#betacomp2:hover,#betacomp3:hover,#betacomp4:hover,#betacomp5:hover
+,#betacomp6:hover,#betacomp7:hover,#betacomp8:hover,#betacomp9:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+#betacomp1:hover > table, #betacomp2:hover > .chart, #betacomp3:hover > table, #betacomp4:hover > .chart,
+#betacomp5:hover > table, #betacomp6:hover > table,#betacomp7:hover > .chart,#betacomp8:hover > table,
+#betacomp9:hover > .chart{
+    opacity: 1;
+    display: table;
+
+
+}
+
+#betacomp1:hover > #det_1_ic1,#betacomp2:hover > #det_1_ic2,#betacomp3:hover > #det_2_ic1,#betacomp4:hover > #det_2_ic2
+,#betacomp5:hover > #det_3_ic1,#betacomp6:hover > #det_4_ic1,#betacomp7:hover > #det_4_ic2,#betacomp8:hover > #det_5_ic1,
+#betacomp9:hover > #det_5_ic2{
+    display: none;
+}
+
+#betacomp2:hover,#betacomp4:hover,#betacomp7:hover,#betacomp9:hover{
+    padding-left: 5%;
+}
+
+#betacomp2> .chart,#betacomp4> .chart,#betacomp7> .chart, #betacomp9 > .chart {
+    display: none;
+}
+
+#det_1_ic1,#det_1_ic2,#det_2_ic1,#det_2_ic2,#det_3_ic1,#det_4_ic1, #det_4_ic2, #det_5_ic1,#det_5_ic2{
+    font-size: 150px;
+    margin-top: 25%;
+    margin-left: 20%;
+    color: gray;
+    z-index: 2;
+}
+
+#betacomp2{
+    border: 5px solid red;
+}
+
+
+#betacomp4{
+    border: 5px solid yellow;
+}
+
+
+#betacomp7{
+    border: 5px solid purple;
+}
+
+
+#betacomp9{
+    border: 5px solid teal;
+}
+
+#det_1,#det_2,#det_3,#det_4,#det_5{
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+body{
+    background-image: url('../img/mainbg.jpg');
+}
+
+footer{
+height: 0px !important;
+ color: white
+}
+ 
+
+txt{
+  font-size: 10px;
+  font-weight: 10px;
+  color: red;
+  float: right;
+}

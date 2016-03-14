@@ -1,0 +1,92 @@
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+     margin: auto;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+   -o-transition: -o-transform .5s ease-in-out;
+   transition: transform .5s ease-in-out;
+  }
+ 
+
+  nav{
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  img{
+    opacity: 0.9;
+  }
+   
+   #myCarousel{
+      margin-top: -10%;
+      z-index: -1;
+      height: 50%;
+      /*border-bottom: 4px solid red;*/
+   }
+
+   .carousel-inner{
+    height: 600px;
+    /*border-bottom: 4px solid red;*/
+   }
+  .carousel-caption{
+    border-radius: 5px;
+    margin-bottom: 40%;
+    background-color: rgba(0,0,0,0.5);
+    width: auto;
+  }
+  
+
+  ol{
+    display: none;
+  }
+ 
+ 
+
+  td>li{
+    font-size: 15px;
+    font-family:arial, cursive;
+    color: rgb(50,50,50) !important;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+   li,li>span{
+    font-size: 20px;
+    font-family:courier, cursive;
+    color: white;
+    font-weight: bold;
+  }
+
+  table{
+    width: 50%;
+  }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    /*border-radius: 10px;*/
+    background-color: rgba(34,34,34,0.9);
+    border: 1px groove black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: rgba(255,255,255,0.5);
+    /*border:1px solid white;*/
+
+
+}
+
+#capt1:hover,#capt2:hover,#capt3:hover{
+
+  border: 4px groove white;
+  box-shadow: 5px 5px 5px 5px black;
+
+}
+
